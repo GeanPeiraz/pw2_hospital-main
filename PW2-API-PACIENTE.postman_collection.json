@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "0d880557-7418-41b2-bed7-308ba16715f0",
+		"name": "PW2-API-PACIENTE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26212279"
+	},
+	"item": [
+		{
+			"name": "paciente/inserir",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nome_paciente",
+							"value": "Eduardo Tavares",
+							"type": "text"
+						},
+						{
+							"key": "email_paciente",
+							"value": "geansilva@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "telefone_paciente",
+							"value": "99135-6666",
+							"type": "text"
+						},
+						{
+							"key": "celular_paciente",
+							"value": "55 11 99135-6666",
+							"type": "text"
+						},
+						{
+							"key": "foto_paciente",
+							"type": "file",
+							"src": "/C:/Users/gean2/Downloads/black-dark-minimalism-text-Linux-command-lines-539403-wallhere.com.jpg"
+						}
+					]
+				},
+				"url": "{{url_base}}/paciente/inserir"
+			},
+			"response": []
+		},
+		{
+			"name": "paciente/selecionar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url_base}}/paciente/selecionar"
+			},
+			"response": []
+		},
+		{
+			"name": "paciente/alterar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "name_Patient",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "email_Patient",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "phone_Patient",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "cellphone_Patient",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "picture_Patient",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "name_Relative",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "phone_Relative",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{url_base}}/paciente/alterar"
+			},
+			"response": []
+		},
+		{
+			"name": "paciente/deletar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url_base}}/paciente/excluir/"
+			},
+			"response": []
+		}
+	]
+}
